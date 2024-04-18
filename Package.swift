@@ -19,6 +19,10 @@ let package = Package(
     targets: [
         .target(
             name: "TestSPM",
+            dependencies: ["TestSPMPrivate"]
+        ),
+        .target(
+            name: "TestSPMPrivate",
             dependencies: ["Nuke"]
         ),
         .testTarget(
